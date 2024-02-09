@@ -33,24 +33,24 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBoxPerimetr = new System.Windows.Forms.TextBox();
+            this.buttonSquare = new System.Windows.Forms.Button();
+            this.textBoxSquare = new System.Windows.Forms.TextBox();
+            this.buttonCircle = new System.Windows.Forms.Button();
+            this.buttonRectangle2 = new System.Windows.Forms.Button();
+            this.buttonHexagon = new System.Windows.Forms.Button();
+            this.buttonGoldRectangle = new System.Windows.Forms.Button();
+            this.buttonTriangle = new System.Windows.Forms.Button();
+            this.buttonRhomb = new System.Windows.Forms.Button();
+            this.textBoxCircle = new System.Windows.Forms.TextBox();
+            this.textBoxRectangle2 = new System.Windows.Forms.TextBox();
+            this.textBoxHexagon = new System.Windows.Forms.TextBox();
+            this.textBoxGoldRectang = new System.Windows.Forms.TextBox();
+            this.textBoxTriangle = new System.Windows.Forms.TextBox();
+            this.textBoxRhomb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.buttonAllForms = new System.Windows.Forms.Button();
+            this.buttonDelite = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -102,155 +102,156 @@
             this.label1.Text = "Ограда для фермера";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // textBoxPerimetr
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(351, 125);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 46);
-            this.textBox1.TabIndex = 3;
+            this.textBoxPerimetr.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPerimetr.Location = new System.Drawing.Point(351, 125);
+            this.textBoxPerimetr.Multiline = true;
+            this.textBoxPerimetr.Name = "textBoxPerimetr";
+            this.textBoxPerimetr.Size = new System.Drawing.Size(198, 46);
+            this.textBoxPerimetr.TabIndex = 3;
             // 
-            // button1
+            // buttonSquare
             // 
-            this.button1.BackColor = System.Drawing.Color.OliveDrab;
-            this.button1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(555, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(228, 44);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Квадрат";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonSquare.BackColor = System.Drawing.Color.OliveDrab;
+            this.buttonSquare.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSquare.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonSquare.Location = new System.Drawing.Point(558, 183);
+            this.buttonSquare.Name = "buttonSquare";
+            this.buttonSquare.Size = new System.Drawing.Size(228, 44);
+            this.buttonSquare.TabIndex = 4;
+            this.buttonSquare.Text = "Квадрат";
+            this.buttonSquare.UseVisualStyleBackColor = false;
+            this.buttonSquare.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // textBoxSquare
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(351, 183);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(198, 44);
-            this.textBox2.TabIndex = 5;
+            this.textBoxSquare.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSquare.Location = new System.Drawing.Point(351, 183);
+            this.textBoxSquare.Multiline = true;
+            this.textBoxSquare.Name = "textBoxSquare";
+            this.textBoxSquare.Size = new System.Drawing.Size(198, 44);
+            this.textBoxSquare.TabIndex = 5;
             // 
-            // button2
+            // buttonCircle
             // 
-            this.button2.BackColor = System.Drawing.Color.OliveDrab;
-            this.button2.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(555, 233);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(227, 40);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Круг";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonCircle.BackColor = System.Drawing.Color.OliveDrab;
+            this.buttonCircle.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCircle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonCircle.Location = new System.Drawing.Point(555, 233);
+            this.buttonCircle.Name = "buttonCircle";
+            this.buttonCircle.Size = new System.Drawing.Size(227, 40);
+            this.buttonCircle.TabIndex = 6;
+            this.buttonCircle.Text = "Круг";
+            this.buttonCircle.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // buttonRectangle2
             // 
-            this.button3.BackColor = System.Drawing.Color.OliveDrab;
-            this.button3.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(556, 279);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 44);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Прямоугольник с отношением сторон равном 2";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonRectangle2.BackColor = System.Drawing.Color.OliveDrab;
+            this.buttonRectangle2.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRectangle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonRectangle2.Location = new System.Drawing.Point(556, 279);
+            this.buttonRectangle2.Name = "buttonRectangle2";
+            this.buttonRectangle2.Size = new System.Drawing.Size(227, 44);
+            this.buttonRectangle2.TabIndex = 7;
+            this.buttonRectangle2.Text = "Прямоугольник с отношением сторон равном 2";
+            this.buttonRectangle2.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // buttonHexagon
             // 
-            this.button4.BackColor = System.Drawing.Color.OliveDrab;
-            this.button4.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(556, 329);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 46);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Правильный шестиугольник";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonHexagon.BackColor = System.Drawing.Color.OliveDrab;
+            this.buttonHexagon.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHexagon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonHexagon.Location = new System.Drawing.Point(556, 329);
+            this.buttonHexagon.Name = "buttonHexagon";
+            this.buttonHexagon.Size = new System.Drawing.Size(225, 46);
+            this.buttonHexagon.TabIndex = 8;
+            this.buttonHexagon.Text = "Правильный шестиугольник";
+            this.buttonHexagon.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // buttonGoldRectangle
             // 
-            this.button5.BackColor = System.Drawing.Color.OliveDrab;
-            this.button5.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(555, 381);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(224, 46);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Прямоугольник с золотым сечением";
-            this.button5.UseVisualStyleBackColor = false;
+            this.buttonGoldRectangle.BackColor = System.Drawing.Color.OliveDrab;
+            this.buttonGoldRectangle.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGoldRectangle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGoldRectangle.Location = new System.Drawing.Point(555, 381);
+            this.buttonGoldRectangle.Name = "buttonGoldRectangle";
+            this.buttonGoldRectangle.Size = new System.Drawing.Size(224, 46);
+            this.buttonGoldRectangle.TabIndex = 9;
+            this.buttonGoldRectangle.Text = "Прямоугольник с золотым сечением";
+            this.buttonGoldRectangle.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // buttonTriangle
             // 
-            this.button6.BackColor = System.Drawing.Color.OliveDrab;
-            this.button6.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(556, 433);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(222, 41);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Равносторонний треугольник";
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonTriangle.BackColor = System.Drawing.Color.OliveDrab;
+            this.buttonTriangle.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTriangle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonTriangle.Location = new System.Drawing.Point(556, 433);
+            this.buttonTriangle.Name = "buttonTriangle";
+            this.buttonTriangle.Size = new System.Drawing.Size(222, 41);
+            this.buttonTriangle.TabIndex = 10;
+            this.buttonTriangle.Text = "Равносторонний треугольник";
+            this.buttonTriangle.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // buttonRhomb
             // 
-            this.button7.BackColor = System.Drawing.Color.OliveDrab;
-            this.button7.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(558, 480);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(221, 43);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "Ромб с углом в 60 градусов";
-            this.button7.UseVisualStyleBackColor = false;
+            this.buttonRhomb.BackColor = System.Drawing.Color.OliveDrab;
+            this.buttonRhomb.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRhomb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonRhomb.Location = new System.Drawing.Point(558, 480);
+            this.buttonRhomb.Name = "buttonRhomb";
+            this.buttonRhomb.Size = new System.Drawing.Size(221, 43);
+            this.buttonRhomb.TabIndex = 11;
+            this.buttonRhomb.Text = "Ромб с углом в 60 градусов";
+            this.buttonRhomb.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // textBoxCircle
             // 
-            this.textBox3.Location = new System.Drawing.Point(351, 233);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(197, 40);
-            this.textBox3.TabIndex = 12;
+            this.textBoxCircle.Location = new System.Drawing.Point(351, 233);
+            this.textBoxCircle.Multiline = true;
+            this.textBoxCircle.Name = "textBoxCircle";
+            this.textBoxCircle.Size = new System.Drawing.Size(197, 40);
+            this.textBoxCircle.TabIndex = 12;
             // 
-            // textBox4
+            // textBoxRectangle2
             // 
-            this.textBox4.Location = new System.Drawing.Point(351, 279);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(197, 44);
-            this.textBox4.TabIndex = 13;
+            this.textBoxRectangle2.Location = new System.Drawing.Point(351, 279);
+            this.textBoxRectangle2.Multiline = true;
+            this.textBoxRectangle2.Name = "textBoxRectangle2";
+            this.textBoxRectangle2.Size = new System.Drawing.Size(197, 44);
+            this.textBoxRectangle2.TabIndex = 13;
             // 
-            // textBox5
+            // textBoxHexagon
             // 
-            this.textBox5.Location = new System.Drawing.Point(351, 329);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(197, 46);
-            this.textBox5.TabIndex = 14;
+            this.textBoxHexagon.Location = new System.Drawing.Point(351, 329);
+            this.textBoxHexagon.Multiline = true;
+            this.textBoxHexagon.Name = "textBoxHexagon";
+            this.textBoxHexagon.Size = new System.Drawing.Size(197, 46);
+            this.textBoxHexagon.TabIndex = 14;
             // 
-            // textBox6
+            // textBoxGoldRectang
             // 
-            this.textBox6.Location = new System.Drawing.Point(351, 381);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(196, 45);
-            this.textBox6.TabIndex = 15;
+            this.textBoxGoldRectang.Location = new System.Drawing.Point(351, 381);
+            this.textBoxGoldRectang.Multiline = true;
+            this.textBoxGoldRectang.Name = "textBoxGoldRectang";
+            this.textBoxGoldRectang.Size = new System.Drawing.Size(196, 45);
+            this.textBoxGoldRectang.TabIndex = 15;
             // 
-            // textBox7
+            // textBoxTriangle
             // 
-            this.textBox7.Location = new System.Drawing.Point(351, 432);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(195, 41);
-            this.textBox7.TabIndex = 16;
+            this.textBoxTriangle.Location = new System.Drawing.Point(351, 432);
+            this.textBoxTriangle.Multiline = true;
+            this.textBoxTriangle.Name = "textBoxTriangle";
+            this.textBoxTriangle.Size = new System.Drawing.Size(195, 41);
+            this.textBoxTriangle.TabIndex = 16;
             // 
-            // textBox8
+            // textBoxRhomb
             // 
-            this.textBox8.Location = new System.Drawing.Point(351, 480);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(194, 43);
-            this.textBox8.TabIndex = 17;
+            this.textBoxRhomb.Location = new System.Drawing.Point(351, 480);
+            this.textBoxRhomb.Multiline = true;
+            this.textBoxRhomb.Name = "textBoxRhomb";
+            this.textBoxRhomb.Size = new System.Drawing.Size(194, 43);
+            this.textBoxRhomb.TabIndex = 17;
             // 
             // label2
             // 
@@ -263,29 +264,29 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Введите периметр :";
             // 
-            // button9
+            // buttonAllForms
             // 
-            this.button9.BackColor = System.Drawing.Color.YellowGreen;
-            this.button9.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button9.Location = new System.Drawing.Point(152, 415);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(183, 49);
-            this.button9.TabIndex = 20;
-            this.button9.Text = "Все формы";
-            this.button9.UseVisualStyleBackColor = false;
+            this.buttonAllForms.BackColor = System.Drawing.Color.YellowGreen;
+            this.buttonAllForms.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAllForms.ForeColor = System.Drawing.Color.DarkGreen;
+            this.buttonAllForms.Location = new System.Drawing.Point(152, 415);
+            this.buttonAllForms.Name = "buttonAllForms";
+            this.buttonAllForms.Size = new System.Drawing.Size(183, 49);
+            this.buttonAllForms.TabIndex = 20;
+            this.buttonAllForms.Text = "Все формы";
+            this.buttonAllForms.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // buttonDelite
             // 
-            this.button10.BackColor = System.Drawing.Color.Brown;
-            this.button10.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Location = new System.Drawing.Point(154, 470);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(182, 53);
-            this.button10.TabIndex = 21;
-            this.button10.Text = "Очистить ";
-            this.button10.UseVisualStyleBackColor = false;
+            this.buttonDelite.BackColor = System.Drawing.Color.Brown;
+            this.buttonDelite.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelite.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonDelite.Location = new System.Drawing.Point(154, 470);
+            this.buttonDelite.Name = "buttonDelite";
+            this.buttonDelite.Size = new System.Drawing.Size(182, 53);
+            this.buttonDelite.TabIndex = 21;
+            this.buttonDelite.Text = "Очистить ";
+            this.buttonDelite.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -293,24 +294,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(826, 546);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.buttonDelite);
+            this.Controls.Add(this.buttonAllForms);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxRhomb);
+            this.Controls.Add(this.textBoxTriangle);
+            this.Controls.Add(this.textBoxGoldRectang);
+            this.Controls.Add(this.textBoxHexagon);
+            this.Controls.Add(this.textBoxRectangle2);
+            this.Controls.Add(this.textBoxCircle);
+            this.Controls.Add(this.buttonRhomb);
+            this.Controls.Add(this.buttonTriangle);
+            this.Controls.Add(this.buttonGoldRectangle);
+            this.Controls.Add(this.buttonHexagon);
+            this.Controls.Add(this.buttonRectangle2);
+            this.Controls.Add(this.buttonCircle);
+            this.Controls.Add(this.textBoxSquare);
+            this.Controls.Add(this.buttonSquare);
+            this.Controls.Add(this.textBoxPerimetr);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -331,24 +332,24 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBoxPerimetr;
+        private System.Windows.Forms.Button buttonSquare;
+        private System.Windows.Forms.TextBox textBoxSquare;
+        private System.Windows.Forms.Button buttonCircle;
+        private System.Windows.Forms.Button buttonRectangle2;
+        private System.Windows.Forms.Button buttonHexagon;
+        private System.Windows.Forms.Button buttonGoldRectangle;
+        private System.Windows.Forms.Button buttonTriangle;
+        private System.Windows.Forms.Button buttonRhomb;
+        private System.Windows.Forms.TextBox textBoxCircle;
+        private System.Windows.Forms.TextBox textBoxRectangle2;
+        private System.Windows.Forms.TextBox textBoxHexagon;
+        private System.Windows.Forms.TextBox textBoxGoldRectang;
+        private System.Windows.Forms.TextBox textBoxTriangle;
+        private System.Windows.Forms.TextBox textBoxRhomb;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button buttonAllForms;
+        private System.Windows.Forms.Button buttonDelite;
     }
 }
 
