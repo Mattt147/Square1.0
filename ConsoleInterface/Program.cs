@@ -31,12 +31,14 @@ namespace ConsoleInterface
                     Console.WriteLine("Выберте форму участка: ");
                     Console.WriteLine("1. Круг");
                     Console.WriteLine("2. Квадрат");
-                    Console.WriteLine("3. Прямоугольник с отношлением сторон 1:2");
-                    Console.WriteLine("4. Прямоугольник с отношением сторон, задаюзимся золотым сечением");
+                    Console.WriteLine("3. Прямоугольник с отношением сторон 1:2");
+                    Console.WriteLine("4. Прямоугольник с отношением сторон, задаюoимся золотым сечением");
                     Console.WriteLine("5. Равносторонний трегольник");
                     Console.WriteLine("6. Правильный шестиугольник");
                     Console.WriteLine("7. Ромб");
                     Console.WriteLine("8. Выбрать все");
+                    Console.WriteLine("9. Завершить работу программы");
+                    Console.WriteLine("");
                     int num = int.Parse(Console.ReadLine());
                     // выбор команды
                     switch (num)
@@ -76,10 +78,7 @@ namespace ConsoleInterface
                             Console.WriteLine("Площадь ромба равна " + SquareModel.SquareRomb(perimetr));
                             continue;
                         case 9:
-                            menu = false;
-                            break;
-                         Console.WriteLine("Для того, чтобы выйти с программы, нажмите 9");
-                            continue;
+                            return;
                     }
                 }
                 // обработка ошибок
@@ -93,7 +92,7 @@ namespace ConsoleInterface
                     Console.WriteLine(e.Message);
                     continue;
                 }
-            } while (menu);
+            } while (true);
         }
     }
 }//треш
