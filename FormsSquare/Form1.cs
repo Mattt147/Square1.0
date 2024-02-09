@@ -26,10 +26,48 @@ namespace FormsSquare
         {
 
         }
-
+        double p = 0;
+        const string msg = "Периметр задаётся целым числом или вещественным, дробная часть отделяется запятой";
         private void button1_Click(object sender, EventArgs e)
         {
+            try { p = double.Parse(textBoxPerimetr.Text); }
+            catch(Exception ex) { MessageBox.Show(msg); return; }
+        }
 
+        private void buttonCircle_Click(object sender, EventArgs e)
+        {
+            try { p = double.Parse(textBoxPerimetr.Text); }
+            catch (Exception ex) { MessageBox.Show(msg); return; }
+        }
+
+        private void buttonRectangle2_Click(object sender, EventArgs e)
+        {
+            try { p = double.Parse(textBoxPerimetr.Text); }
+            catch (Exception ex) { MessageBox.Show(msg); return; }
+        }
+
+        private void buttonHexagon_Click(object sender, EventArgs e)
+        {
+            try { p = double.Parse(textBoxPerimetr.Text); }
+            catch (Exception ex) { MessageBox.Show(msg); return; }
+        }
+
+        private void buttonGoldRectangle_Click(object sender, EventArgs e)
+        {
+            try { p = double.Parse(textBoxPerimetr.Text); }
+            catch (Exception ex) { MessageBox.Show(msg); return; }
+        }
+
+        private void buttonTriangle_Click(object sender, EventArgs e)
+        {
+            try { p = double.Parse(textBoxPerimetr.Text); }
+            catch (Exception ex) { MessageBox.Show(msg); return; }
+        }
+
+        private void buttonRhomb_Click(object sender, EventArgs e)
+        {
+            try { p = double.Parse(textBoxPerimetr.Text); }
+            catch (Exception ex) { MessageBox.Show(msg); return; }
         }
     }
 }
