@@ -144,6 +144,7 @@
             this.buttonCircle.TabIndex = 6;
             this.buttonCircle.Text = "Круг";
             this.buttonCircle.UseVisualStyleBackColor = false;
+            this.buttonCircle.Click += new System.EventHandler(this.buttonCircle_Click);
             // 
             // buttonRectangle2
             // 
@@ -156,6 +157,7 @@
             this.buttonRectangle2.TabIndex = 7;
             this.buttonRectangle2.Text = "Прямоугольник с отношением сторон равном 2";
             this.buttonRectangle2.UseVisualStyleBackColor = false;
+            this.buttonRectangle2.Click += new System.EventHandler(this.buttonRectangle2_Click);
             // 
             // buttonHexagon
             // 
@@ -168,6 +170,7 @@
             this.buttonHexagon.TabIndex = 8;
             this.buttonHexagon.Text = "Правильный шестиугольник";
             this.buttonHexagon.UseVisualStyleBackColor = false;
+            this.buttonHexagon.Click += new System.EventHandler(this.buttonHexagon_Click);
             // 
             // buttonGoldRectangle
             // 
@@ -180,6 +183,7 @@
             this.buttonGoldRectangle.TabIndex = 9;
             this.buttonGoldRectangle.Text = "Прямоугольник с золотым сечением";
             this.buttonGoldRectangle.UseVisualStyleBackColor = false;
+            this.buttonGoldRectangle.Click += new System.EventHandler(this.buttonGoldRectangle_Click);
             // 
             // buttonTriangle
             // 
@@ -192,6 +196,7 @@
             this.buttonTriangle.TabIndex = 10;
             this.buttonTriangle.Text = "Равносторонний треугольник";
             this.buttonTriangle.UseVisualStyleBackColor = false;
+            this.buttonTriangle.Click += new System.EventHandler(this.buttonTriangle_Click);
             // 
             // buttonRhomb
             // 
@@ -204,6 +209,7 @@
             this.buttonRhomb.TabIndex = 11;
             this.buttonRhomb.Text = "Ромб с углом в 60 градусов";
             this.buttonRhomb.UseVisualStyleBackColor = false;
+            this.buttonRhomb.Click += new System.EventHandler(this.buttonRhomb_Click);
             // 
             // textBoxCircle
             // 
