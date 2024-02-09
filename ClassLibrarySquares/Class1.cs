@@ -8,7 +8,7 @@ namespace ClassLibrarySquares
 {   /// <summary>
    /// Утилитарный клас для решения задачи фермера
   /// </summary>
-    public static class CLass
+    public static class SquareModel
     {  
         /// <summary>
         /// Вычисление плоащди квадрата
