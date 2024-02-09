@@ -59,7 +59,7 @@ namespace FormsSquare
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
 
-            buttonHexagon.Text = SquareModel.SquareHexagon(p).ToString();
+            textBoxHexagon.Text = SquareModel.SquareHexagon(p).ToString();
         }
 
         private void buttonGoldRectangle_Click(object sender, EventArgs e)
@@ -67,21 +67,21 @@ namespace FormsSquare
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
 
-            buttonGoldRectangle.Text = SquareModel.SquareRectangleGold(p).ToString();
+            textBoxGoldRectang.Text = SquareModel.SquareRectangleGold(p).ToString();
         }
 
         private void buttonTriangle_Click(object sender, EventArgs e)
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
-            buttonTriangle.Text = SquareModel.SquareTriangle(p).ToString();
+            textBoxTriangle.Text = SquareModel.SquareTriangle(p).ToString();
         }
 
         private void buttonRhomb_Click(object sender, EventArgs e)
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
-            buttonRhomb.Text = SquareModel.SquareRomb(p).ToString();
+            textBoxRhomb.Text = SquareModel.SquareRomb(p).ToString();
             
         }
 
@@ -89,10 +89,10 @@ namespace FormsSquare
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
-            buttonRhomb.Text = SquareModel.SquareRomb(p).ToString();
-            buttonTriangle.Text = SquareModel.SquareTriangle(p).ToString();
-            buttonGoldRectangle.Text = SquareModel.SquareRectangleGold(p).ToString();
-            buttonHexagon.Text = SquareModel.SquareHexagon(p).ToString();
+            textBoxRhomb.Text = SquareModel.SquareRomb(p).ToString();
+            textBoxTriangle.Text = SquareModel.SquareTriangle(p).ToString();
+            textBoxGoldRectang.Text = SquareModel.SquareRectangleGold(p).ToString();
+            textBoxHexagon.Text = SquareModel.SquareHexagon(p).ToString();
             textBoxRectangle2.Text = SquareModel.SquareRectangle2(p).ToString();
             textBoxCircle.Text = SquareModel.SquareCircle(p).ToString();
             textBoxSquare.Text = SquareModel.SquareQudrat(p).ToString();
@@ -103,11 +103,12 @@ namespace FormsSquare
         {
             textBoxSquare.Text = string.Empty;
             textBoxCircle.Text = string.Empty;
-            buttonRhomb.Text = string.Empty;
-            buttonTriangle.Text = string.Empty;
-            buttonGoldRectangle.Text = string.Empty;
-            buttonHexagon.Text = string.Empty;
+            textBoxRhomb.Text = string.Empty;
+            textBoxTriangle.Text = string.Empty;
+            textBoxGoldRectang.Text = string.Empty;
+            textBoxHexagon.Text = string.Empty;
             textBoxRectangle2.Text = string.Empty;
+            textBoxPerimetr.Text = string.Empty;
 
         }
     }

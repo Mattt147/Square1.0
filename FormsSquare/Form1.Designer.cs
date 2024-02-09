@@ -75,10 +75,10 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Green;
-            this.panel2.Location = new System.Drawing.Point(49, 16);
+            this.panel2.BackColor = System.Drawing.Color.OliveDrab;
+            this.panel2.Location = new System.Drawing.Point(143, 16);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(401, 101);
+            this.panel2.Size = new System.Drawing.Size(307, 101);
             this.panel2.TabIndex = 0;
             // 
             // panel4
@@ -301,7 +301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(826, 546);
+            this.ClientSize = new System.Drawing.Size(903, 546);
             this.Controls.Add(this.buttonDelite);
             this.Controls.Add(this.buttonAllForms);
             this.Controls.Add(this.label2);
