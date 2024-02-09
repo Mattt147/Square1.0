@@ -281,6 +281,7 @@
             this.buttonAllForms.TabIndex = 20;
             this.buttonAllForms.Text = "Все формы";
             this.buttonAllForms.UseVisualStyleBackColor = false;
+            this.buttonAllForms.Click += new System.EventHandler(this.buttonAllForms_Click);
             // 
             // buttonDelite
             // 
@@ -293,6 +294,7 @@
             this.buttonDelite.TabIndex = 21;
             this.buttonDelite.Text = "Очистить ";
             this.buttonDelite.UseVisualStyleBackColor = false;
+            this.buttonDelite.Click += new System.EventHandler(this.buttonDelite_Click);
             // 
             // Form1
             // 
