@@ -19,50 +19,57 @@ namespace ConsoleInterface
                     Console.WriteLine("Ограда фермера: ");
                     Console.WriteLine("Для того, чтобы выйти с программы, нажмите 8");
                     Console.WriteLine("Введите периметр: ");
+                    // объявление и ввод значения периметра
                     double perimetr;
                     perimetr = double.Parse(Console.ReadLine());
+                    // обработка ошибки при неверном вводе значения периметра
                     if (perimetr < 0)
                     {
                         throw new Exception("Ошибка! Периметр должен быть положительным числом");
                         continue;
                     }
+                    // выбор формы участка
                     Console.WriteLine("Выберте форму участка: ");
                     Console.WriteLine("1. Круг");
                     Console.WriteLine("2. Квадрат");
-                    Console.WriteLine("3. Прямоугольник_2");
-                    Console.WriteLine("4. Прямоугольник_Ф");
-                    Console.WriteLine("5. Трегольник");
-                    Console.WriteLine("6. Шестиугольник");
+                    Console.WriteLine("3. Прямоугольник с отношлением сторон 1:2");
+                    Console.WriteLine("4. Прямоугольник с отношением сторон, задаюзимся золотым сечением");
+                    Console.WriteLine("5. Равносторонний трегольник");
+                    Console.WriteLine("6. Правильный шестиугольник");
                     Console.WriteLine("7. Ромб");
                     int num = int.Parse(Console.ReadLine());
+                    // выбор команды
                     switch (num)
                     {
                         case 1:
-                            SquareModel.SquareCircle(perimetr);
+                            Console.WriteLine("Площадь круга равна " + SquareModel.SquareCircle(perimetr));
                             continue;
                         case 2:
-                            SquareModel.SquareQudrat(perimetr);
+                            Console.WriteLine("Площадь квадрата равна " + SquareModel.SquareQudrat(perimetr));
                             continue;
                         case 3:
-                            SquareModel.SquareRectangle2(perimetr);
+                            Console.WriteLine("Площадь прямоугольника с отношением" +
+                                "сторон 1:2 равна " + SquareModel.SquareRectangle2(perimetr));
                             continue;
                         case 4:
-                            SquareModel.SquareRectangleGold(perimetr);
+                            Console.WriteLine("Площадь прямоугольника" +
+                                " с отношением сторон, задаюзимся золотым сечением равна " + SquareModel.SquareRectangleGold(perimetr));
                             continue;
                         case 5:
-                            SquareModel.SquareTriangle(perimetr);
+                            Console.WriteLine("Площадь равностороннего треугольника равна " + SquareModel.SquareTriangle(perimetr));
                             continue;
                         case 6:
-                            SquareModel.SquareHexagon(perimetr);
+                            Console.WriteLine("Площадь правильного шестиугольника равна " + SquareModel.SquareHexagon(perimetr));
                             continue;
                         case 7:
-                            SquareModel.SquareRomb(perimetr);
+                            Console.WriteLine("Площадь ромба равна " + SquareModel.SquareRomb(perimetr));
                             continue;
                         case 8:
                             menu = false;
                             break;
                     }
                 }
+                // обработка ошибок
                 catch (FormatException)
                 {
                     Console.WriteLine("Вы ввели не число");
