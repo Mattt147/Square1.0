@@ -17,7 +17,6 @@ namespace ConsoleInterface
                 try
                 {
                     Console.WriteLine("Ограда фермера: ");
-                    Console.WriteLine("Для того, чтобы выйти с программы, нажмите 8");
                     Console.WriteLine("Введите периметр: ");
                     // объявление и ввод значения периметра
                     double perimetr;
@@ -37,6 +36,7 @@ namespace ConsoleInterface
                     Console.WriteLine("5. Равносторонний трегольник");
                     Console.WriteLine("6. Правильный шестиугольник");
                     Console.WriteLine("7. Ромб");
+                    Console.WriteLine("8. Выбрать все");
                     int num = int.Parse(Console.ReadLine());
                     // выбор команды
                     switch (num)
@@ -65,8 +65,21 @@ namespace ConsoleInterface
                             Console.WriteLine("Площадь ромба равна " + SquareModel.SquareRomb(perimetr));
                             continue;
                         case 8:
+                            Console.WriteLine("Площадь круга равна " + SquareModel.SquareCircle(perimetr));
+                            Console.WriteLine("Площадь квадрата равна " + SquareModel.SquareQudrat(perimetr));
+                            Console.WriteLine("Площадь прямоугольника с отношением" +
+                                "сторон 1:2 равна " + SquareModel.SquareRectangle2(perimetr));
+                            Console.WriteLine("Площадь прямоугольника" +
+                                " с отношением сторон, задаюзимся золотым сечением равна " + SquareModel.SquareRectangleGold(perimetr));
+                            Console.WriteLine("Площадь равностороннего треугольника равна " + SquareModel.SquareTriangle(perimetr));
+                            Console.WriteLine("Площадь правильного шестиугольника равна " + SquareModel.SquareHexagon(perimetr));
+                            Console.WriteLine("Площадь ромба равна " + SquareModel.SquareRomb(perimetr));
+                            continue;
+                        case 9:
                             menu = false;
                             break;
+                         Console.WriteLine("Для того, чтобы выйти с программы, нажмите 9");
+                            continue;
                     }
                 }
                 // обработка ошибок
