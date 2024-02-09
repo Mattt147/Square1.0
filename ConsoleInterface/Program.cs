@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibrarySquares;
 
 namespace ConsoleInterface
 {
@@ -16,6 +17,16 @@ namespace ConsoleInterface
                 try
                 {
                     Console.WriteLine("Ограда фермера: ");
+                    Console.WriteLine("Для того, чтобы выйти с программы, нажмите 8");
+                    Console.WriteLine("Введите периметр: ");
+                    double perimetr;
+                    perimetr = double.Parse(Console.ReadLine());
+                    if (perimetr < 0)
+                    {
+                        throw new Exception("Ошибка! Периметр должен быть положительным числом");
+                        continue;
+                    }
+                    Console.WriteLine("Выберте форму участка: ");
                     Console.WriteLine("1. Круг");
                     Console.WriteLine("2. Квадрат");
                     Console.WriteLine("3. Прямоугольник_2");
@@ -23,36 +34,33 @@ namespace ConsoleInterface
                     Console.WriteLine("5. Трегольник");
                     Console.WriteLine("6. Шестиугольник");
                     Console.WriteLine("7. Ромб");
-                    Console.WriteLine("8. Выход из программы");
-                    Console.WriteLine("Выберте форму участка: ");
                     int num = int.Parse(Console.ReadLine());
                     switch (num)
                     {
                         case 1:
-
-                            break;
+                            SquareModel.SquareCircle(perimetr);
+                            continue;
                         case 2:
-
-                            break;
+                            SquareModel.SquareQudrat(perimetr);
+                            continue;
                         case 3:
-
-                            break;
+                            SquareModel.SquareRectangle2(perimetr);
+                            continue;
                         case 4:
-
-                            break;
+                            SquareModel.SquareRectangleGold(perimetr);
+                            continue;
                         case 5:
-
-                            break;
+                            SquareModel.SquareTriangle(perimetr);
+                            continue;
                         case 6:
-
-                            break;
+                            SquareModel.SquareHexagon(perimetr);
+                            continue;
                         case 7:
-
-                            break;
+                            SquareModel.SquareRomb(perimetr);
+                            continue;
                         case 8:
-
+                            menu = false;
                             break;
-
                     }
                 }
                 catch (FormatException)
