@@ -65,16 +65,16 @@ namespace FarmLibraryTest
         public void CircleTest()
         {
             double firstPerimetr = Math.PI;
-            double secondPerimetr = 228;
+            double secondPerimetr = 129;
             double thirdPerimetr = 42;
-            double fourthPerimetr = 729;
-            double fifthPerimetr = 0.8;
+            double fourthPerimetr = 672;
+            double fifthPerimetr = 0.7;
 
             double firstExpected = Math.PI / 4;
-            double secondExpected = 4138.199999999998;
-            double thirdExpected = 140.445857;
-            double fourthExpected = 42312.18059999997;
-            double fifthExpected = 0.050955;
+            double secondExpected = 1324.2487;
+            double thirdExpected = 140.37466;
+            double fourthExpected = 35935.91291;
+            double fifthExpected = 0.038993;
 
             double firstActual = SquareModel.SquareCircle(firstPerimetr);
             double secondActual = SquareModel.SquareCircle(secondPerimetr);
