@@ -8,19 +8,85 @@ namespace FarmLibraryTest
         [TestMethod]
         public void QudratTest()
         {
-            Assert.AreEqual(0, 1);
+            double firstPerimetr = 23;
+            double secondPerimetr = 0.32;
+            double thirdPerimetr = 294;
+            double fourthPerimetr = 75;
+            double fifthPerimetr = 890;
+
+            double firstExpected = 33.0625;
+            double secondExpected = 0.0064;
+            double thirdExpected = 5402.25;
+            double fourthExpected = 351.5625;
+            double fifthExpected = 49506.25;
+
+            double firstActual = SquareModel.SquareQudrat(firstPerimetr);
+            double secondActual = SquareModel.SquareQudrat(secondPerimetr);
+            double thirdActual = SquareModel.SquareQudrat(thirdPerimetr);
+            double fourthActual = SquareModel.SquareQudrat(fourthPerimetr);
+            double fifthActual = SquareModel.SquareQudrat(fifthPerimetr);
+
+            Assert.IsTrue(Math.Abs(firstExpected - firstActual) < 0.00001);
+            Assert.IsTrue(Math.Abs(secondActual - secondExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(thirdActual - thirdExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(fourthActual - fourthExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(fifthActual - fifthExpected) < 0.00001);
         }
 
         [TestMethod]
         public void Rectangle2Test()
         {
-            Assert.AreEqual(0, 1);
+            double firstPerimetr = 31;
+            double secondPerimetr = 0.1;
+            double thirdPerimetr = 567;
+            double fourthPerimetr = 199;
+            double fifthPerimetr = 369;
+
+            double firstExpected = 53.38888888888888;
+            double secondExpected = 0.000555555555555;
+            double thirdExpected = 17860.5;
+            double fourthExpected = 2200.055555555555;
+            double fifthExpected = 7564.5;
+
+            double firstActual = SquareModel.SquareRectangle2(firstPerimetr);
+            double secondActual = SquareModel.SquareRectangle2(secondPerimetr);
+            double thirdActual = SquareModel.SquareRectangle2(thirdPerimetr);
+            double fourthActual = SquareModel.SquareRectangle2(fourthPerimetr);
+            double fifthActual = SquareModel.SquareRectangle2(fifthPerimetr);
+
+            Assert.IsTrue(Math.Abs(firstExpected - firstActual) < 0.00001);
+            Assert.IsTrue(Math.Abs(secondActual - secondExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(thirdActual - thirdExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(fourthActual - fourthExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(fifthActual - fifthExpected) < 0.00001);
         }
 
         [TestMethod]
         public void CircleTest()
         {
-            Assert.AreEqual(0, 1);
+            double firstPerimetr = Math.PI;
+            double secondPerimetr = 228;
+            double thirdPerimetr = 42;
+            double fourthPerimetr = 729;
+            double fifthPerimetr = 0.8;
+
+            double firstExpected = Math.PI / 4;
+            double secondExpected = 4138.199999999998;
+            double thirdExpected = 140.445857;
+            double fourthExpected = 42312.18059999997;
+            double fifthExpected = 0.050955;
+
+            double firstActual = SquareModel.SquareCircle(firstPerimetr);
+            double secondActual = SquareModel.SquareCircle(secondPerimetr);
+            double thirdActual = SquareModel.SquareCircle(thirdPerimetr);
+            double fourthActual = SquareModel.SquareCircle(fourthPerimetr);
+            double fifthActual = SquareModel.SquareCircle(fifthPerimetr);
+
+            Assert.IsTrue(Math.Abs(firstExpected - firstActual) < 0.00001);
+            Assert.IsTrue(Math.Abs(secondActual - secondExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(thirdActual - thirdExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(fourthActual - fourthExpected) < 0.00001);
+            Assert.IsTrue(Math.Abs(fifthActual - fifthExpected) < 0.00001);
         }
 
 
