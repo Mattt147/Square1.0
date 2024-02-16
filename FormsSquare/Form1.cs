@@ -28,12 +28,12 @@ namespace FormsSquare
 
         }
         double p = 0;
-        const string msg = "Периметр задаётся целым числом или вещественным, дробная часть отделяется запятой";
+        const string msg = "Периметр задаётся целым или вещественным положительным числом , дробная часть отделяется запятой";
         private void button1_Click(object sender, EventArgs e)
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch(Exception ex) { MessageBox.Show(msg); return; }
-
+            if (p <= 0) {MessageBox.Show(msg); return; }
             textBoxSquare.Text = SquareModel.SquareQudrat(p).ToString();
 
         }
@@ -42,7 +42,7 @@ namespace FormsSquare
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
-
+            if (p <= 0) {MessageBox.Show(msg); return; }
             textBoxCircle.Text = SquareModel.SquareCircle(p).ToString();
         }
 
@@ -51,6 +51,7 @@ namespace FormsSquare
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
+            if (p < 0) { MessageBox.Show(msg); return; }
             textBoxRectangle2.Text = SquareModel.SquareRectangle2(p).ToString();
         }
 
@@ -58,7 +59,7 @@ namespace FormsSquare
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
-
+            if (p <= 0) { MessageBox.Show(msg); return; }
             textBoxHexagon.Text = SquareModel.SquareHexagon(p).ToString();
         }
 
@@ -66,7 +67,7 @@ namespace FormsSquare
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
-
+            if (p <= 0) { MessageBox.Show(msg); return; }
             textBoxGoldRectang.Text = SquareModel.SquareRectangleGold(p).ToString();
         }
 
@@ -74,6 +75,7 @@ namespace FormsSquare
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
+            if (p <= 0) { MessageBox.Show(msg); return; }
             textBoxTriangle.Text = SquareModel.SquareTriangle(p).ToString();
         }
 
@@ -81,6 +83,7 @@ namespace FormsSquare
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
+            if (p <= 0) { MessageBox.Show(msg); return; }
             textBoxRhomb.Text = SquareModel.SquareRomb(p).ToString();
             
         }
@@ -89,6 +92,7 @@ namespace FormsSquare
         {
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
+            if (p <= 0) { MessageBox.Show(msg); return; }
             textBoxRhomb.Text = SquareModel.SquareRomb(p).ToString();
             textBoxTriangle.Text = SquareModel.SquareTriangle(p).ToString();
             textBoxGoldRectang.Text = SquareModel.SquareRectangleGold(p).ToString();
@@ -109,6 +113,11 @@ namespace FormsSquare
             textBoxHexagon.Text = string.Empty;
             textBoxRectangle2.Text = string.Empty;
             textBoxPerimetr.Text = string.Empty;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

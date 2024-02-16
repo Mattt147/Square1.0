@@ -34,7 +34,7 @@ namespace ClassLibrarySquares
 
         /// <summary>
         /// Вычисление плоащди прямоугольника с отношением сторон, 
-        /// Задующемся золотым сечением
+        /// Задающюемся золотым сечением
         /// </summary>
         /// <param name="perimetr"></param>
         /// <returns> площадь </returns>
