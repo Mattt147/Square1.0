@@ -78,6 +78,7 @@ namespace ConsoleInterface
                             Console.WriteLine("Площадь ромба равна " + SquareModel.SquareRomb(perimetr));
                             continue;
                         case 9:
+                            menu = false;
                             return;
                     }
                 }
@@ -92,7 +93,7 @@ namespace ConsoleInterface
                     Console.WriteLine(e.Message);
                     continue;
                 }
-            } while (true);
+            } while (menu);
         }
     }
 }//треш
