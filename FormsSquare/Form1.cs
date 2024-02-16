@@ -27,13 +27,17 @@ namespace FormsSquare
         {
 
         }
+        // вводим переменную 
         double p = 0;
+        // обозначаем текст сообщения об ошибке
         const string msg = "Периметр задаётся целым или вещественным положительным числом , дробная часть отделяется запятой";
         private void button1_Click(object sender, EventArgs e)
         {
+            // Делаем проверку вводимого числа, если число введено не правильно выводится сообщение об ошибке
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch(Exception ex) { MessageBox.Show(msg); return; }
             if (p <= 0) {MessageBox.Show(msg); return; }
+            // в случае успешного ввода, обрабатываем число через функцию основного кода и выводим в текстовое поле
             textBoxSquare.Text = SquareModel.SquareQudrat(p).ToString();
 
         }
@@ -93,6 +97,7 @@ namespace FormsSquare
             try { p = double.Parse(textBoxPerimetr.Text); }
             catch (Exception ex) { MessageBox.Show(msg); return; }
             if (p <= 0) { MessageBox.Show(msg); return; }
+            // обрабатываем все значения и выводим в текстовое поле
             textBoxRhomb.Text = SquareModel.SquareRomb(p).ToString();
             textBoxTriangle.Text = SquareModel.SquareTriangle(p).ToString();
             textBoxGoldRectang.Text = SquareModel.SquareRectangleGold(p).ToString();
@@ -105,6 +110,7 @@ namespace FormsSquare
 
         private void buttonDelite_Click(object sender, EventArgs e)
         {
+            // удаляем все значения из текстовго поля
             textBoxSquare.Text = string.Empty;
             textBoxCircle.Text = string.Empty;
             textBoxRhomb.Text = string.Empty;
